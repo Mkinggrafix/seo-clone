@@ -131,11 +131,13 @@
         }
     
         form{
+            display: flex;
             width: 90%;
             margin: 1.5rem auto;
             padding: 0.5rem;
     
             .email{
+                width: 70%;
                 font-size: 1.5rem;
             }
         }
