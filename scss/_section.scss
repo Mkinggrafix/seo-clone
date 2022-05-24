@@ -1,0 +1,308 @@
+.home{
+    padding-top: 5rem;
+
+    .box{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+
+        img{
+            width: 50rem;
+        }
+
+        .content{
+            line-height: 1.9;
+
+            h3{
+                color: $black;
+                font-size: 3rem;
+            }
+
+            P{
+                color: $light-color;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.services{
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        
+
+        .box{
+            background-color: $light-bg;
+            border-radius: 5px;
+            text-align: center;
+            padding: 1.5rem;
+            
+            img{
+                height: 10rem;
+                margin-bottom: .5rem;
+            }
+
+            h3{
+                color: $black;
+                font-size: 2rem;
+                margin: 2rem;
+            }
+
+            p{
+                color: $light-color;
+                font-size: 1.5rem;
+                line-height: 1.8;
+            }
+        }
+    }
+}
+
+.work{
+    .box-container{
+      columns:3 25rem;
+      gap:2rem;
+  
+      img{
+        margin-bottom: 2rem;
+        width: 100%;
+        border-radius: .5rem;
+      }
+    }
+}
+
+.pricing{
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }   
+
+    .box{
+        min-height: 70vh;
+        text-align: center;
+
+        h3{
+            display: inline-block;
+            color: $white;
+            background-color: $red;
+            font-size: 2rem;
+            font-weight: 400;
+            padding: 1rem 2rem;
+            margin-top: 3rem;
+            border-radius: 5px;
+        }
+    }
+
+    .box:nth-child(2){
+        background-color: $light-bg;
+        border-radius: 5px;
+
+        .btn{
+            background-color: $red;
+            color: #fff;
+            margin-top: 2rem;
+
+            &:hover{
+                background-color: #fc723b;
+                color: $light-bg;
+            }
+        }
+    }
+
+    i{
+        color: $red;
+        margin-right: .5rem;
+    }
+
+    .price{
+        font-size: 5rem;
+        font-weight: 700;
+        padding: 2rem 0;
+        color: $black;
+
+        span{
+            font-size: 3rem;
+        }
+    }
+
+    li{
+        list-style-type: none;
+        font-size: 1.5rem;
+        color: $light-color;
+        line-height: 2.5;
+    }
+}
+
+.reviews{
+   .box-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+   }
+
+   .box{
+       .user{
+           display: flex;
+           align-items: center;
+
+           img{
+               width: 8rem;
+               height: 8rem;
+               border-radius: 50%;
+           }
+
+           .info{
+               margin-left: 1rem;
+               line-height: 2;
+
+               h3{
+                   font-size: 2rem;
+                   color: $black;
+               }
+           }
+       }
+
+       i{
+            color: $red;
+            font-size: 1.4rem;
+        }
+
+       .text{
+            background-color: $light-bg;
+            color: $light-color;
+            margin-top: 3rem;
+            font-size: 1.5rem;
+            padding: 2rem;
+            border-radius: 5px;
+            line-height: 1.7;
+            position: relative;
+
+            &::before{
+                content: '';
+                width: 2rem;
+                height: 2rem;
+                background-color: $light-bg;
+                position: absolute;
+                top: -1rem;
+                left: 2.5rem;
+                transform: rotate(45deg);
+            }
+        }
+   }
+}
+
+.contact{
+    .row{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+
+        .box{
+            background-color: $light-bg;
+            padding: 2rem;
+            border-radius: 5px;
+
+            &:nth-child(1){
+                margin-bottom: 2rem;
+            }
+
+            h3{
+                color: $black;
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            p{
+                font-size: 1.7rem;
+                color: $light-color;
+                line-height: 2.3;
+
+                span{
+                    color: $red;
+                }
+            }
+        }
+
+        form{
+            background-color: $light-bg;
+            padding: 2rem;
+            border-radius: 5px;
+
+            h3{
+                color: $black;
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .input-box{
+                display: block;
+                width: 100%;
+                margin-bottom: 1.5rem;
+                padding: 1.5rem;
+                text-transform: lowercase;
+                border-radius: 5px;
+                font-size: 1.7rem;
+            }
+
+            textarea{
+                height: 15rem;
+                resize: none;
+            }
+
+            .btn{
+                background-color: $red;
+                color: #fff;
+
+                &:hover{
+                    background-color: #fc723b;
+                    color: $light-bg;
+                }
+            }
+        }
+    }
+}
+
+.newsletter{
+    background-color: $red;
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+    .content{
+        h3{
+            font-size: 5rem;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+    
+        p{
+            font-size: 1.8rem;
+        }
+    }
+
+    form{
+        width: 60rem;
+        background-color: #fff;
+        padding: 0.7rem;
+        border-radius: 5px;
+        margin-left: 20rem;
+
+        .email{
+            width: 72%;
+            text-transform: none;
+            font-size: 2rem;
+            padding: 1rem 2rem;
+        }
+
+        .btn{
+            margin-top: 0;
+            background-color: #333;
+
+            &:hover{
+                background-color: $red;
+            }
+        }
+    }
+}

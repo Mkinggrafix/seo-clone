@@ -1,0 +1,105 @@
+%global{
+    background-color: $light-bg;
+    padding: 3rem 9%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.2rem;
+    align-items: center;
+
+    .logo{
+        color: $black;
+        margin-right: auto;
+    }
+
+    i{
+        color: $red;
+    }
+
+    nav{
+        a{
+            font-size: 1.8rem;
+            color: $light-color;
+            margin-left: 1.5rem;
+
+            &:hover{
+                color: $red;
+            }
+        }
+    }
+}
+
+// header
+header{
+    @extend %global; 
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+
+    #menu-btn{
+        display: none;
+    }
+
+    #menu-btn{
+        font-size: 2.5rem;
+        cursor: pointer;
+
+        &:hover{
+            color: $red;
+        }
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+
+    .scroll-indicator{
+        position: absolute;
+        top:99%; 
+        left:0;
+        width: 100%; // change later
+        height: .5rem;
+        background: $red;
+    }            
+}
+
+// footer
+.quick-links{
+    @extend %global;
+    background-color: $black;
+
+    .logo{
+        color: $white;
+    }
+
+    nav{
+        a{
+            color: $white;
+        }
+    }
+}
+
+.credit{
+    display: flex;
+    justify-content: space-between;
+    background-color: $light-bg;
+    color: $light-color;
+    font-size: 2rem;
+
+    span{
+        color: $red;
+    }
+
+    .share{
+        a{
+            color: $black;
+            font-size: 2.5rem;
+            letter-spacing: 2rem;
+
+            &:hover{
+                color: $red;
+            }
+        }
+    }
+}

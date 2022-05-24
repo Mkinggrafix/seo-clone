@@ -1,0 +1,214 @@
+@media (max-width: 768px) {
+    .heading{
+        margin-bottom: 1rem;
+    }
+    
+    header{
+        padding: 2rem 8%;
+
+       nav{
+           display: none;
+       }
+
+       #menu-btn{
+            display: block;
+        }
+
+        #theme-btn{
+            margin-left: 1.5rem;
+        }
+    }
+
+    section{
+        padding: 0 5%;
+    }
+
+    .home{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        .box{
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            margin-bottom: 3rem;
+
+            img{
+                width: 45rem;
+                margin: 0;
+            }
+
+            .content{
+               
+                line-height: 1.9;
+    
+                h3{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        .box:nth-child(2){
+            flex-direction: column-reverse;
+        }
+    }
+
+    .services{
+        padding-bottom: 3rem;
+
+        .box-container{
+            grid-template-columns: repeat(2, 1fr);
+
+            .box{
+                padding: 1.5rem;
+                
+                img{
+                    height: 5rem;
+                    margin-bottom: .3rem;
+                }
+    
+                h3{
+                    font-size: 1.5rem;
+                }
+    
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .pricing{
+        .box-container{
+            display: block;
+
+            .box{
+                margin-bottom: 2rem;
+            }
+
+            .box:nth-child(2){
+                width: 25rem;
+                margin: 0 auto;
+
+                .btn{
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+
+    .reviews{
+        .box-container{
+            display: block;
+
+            .box{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .contact{
+        margin-bottom: 3rem;
+        .row{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .newsletter{
+        display: block;
+        text-align: center;
+        padding: 2rem 0;
+
+        .content{
+            h3{
+                font-size: 3rem;
+                margin-bottom: 0rem;
+            }
+        
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    
+        form{
+            width: 90%;
+            margin: 1.5rem auto;
+            padding: 0.5rem;
+    
+            .email{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .quick-links{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: $white;
+
+        .logo{
+            color: $black;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+
+        .navbar a{
+            display: block;
+            color: $black;
+            font-size: 1.5rem;
+            line-height: 2;
+        }
+    }
+
+    .credit{
+        display: flex;
+        flex-direction: column;
+        background-color: $black;
+        color: $light-bg;
+        font-size: 1.5rem;
+        align-items: center;
+        padding: 2.5rem 0;
+
+        .share{
+            a{
+                color: $white;
+                font-size: 2rem;
+                letter-spacing: 1.5rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .heading{
+        font-size: 3rem;
+    }
+
+    .home{
+        .box{
+            img{
+                width: 30rem;
+            }
+
+            .content{
+                h3{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    .services{
+        .box-container{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .credit{
+        padding: 0 1rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+}

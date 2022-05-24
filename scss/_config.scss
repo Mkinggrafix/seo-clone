@@ -1,0 +1,57 @@
+$red:#fa4f09;
+$black:#333;
+$white:#fff;
+$light-color:#666;
+$light-bg:#eee;
+
+section{
+    padding: 3rem 9%;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    background: $light-bg;
+    cursor: pointer;
+    color:var(--black);
+    padding:1rem 3rem;
+    font-size: 1.7rem;
+  
+    &:hover{
+      background: $red;
+      color:#fff;
+    }
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: $black;
+    margin-bottom: 3rem;
+
+    span{
+        color: $red;
+    }
+}
+
+.side-menu{
+    width: 100%;
+    height: 0;
+    overflow-x: hidden;
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    background-color: $light-bg;
+    font-size: 1.8rem;
+    line-height: 2.5;
+    
+    a{
+        color: $light-color;
+        display: block;
+    }
+}
+
+.pad-menu{
+    padding: 1rem 1.5rem 2rem 1.5rem;
+}
